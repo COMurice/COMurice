@@ -1,0 +1,181 @@
+/usr/local/bin/ld: ld_o/eelf32_x86_64.o: in function `gldelf32_x86_64_handle_option':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/eelf32_x86_64.c:5318: undefined reference to `optarg'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/eelf32_x86_64.c:5335: undefined reference to `optarg'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/eelf32_x86_64.c:5311: undefined reference to `optarg'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/eelf32_x86_64.c:5362: undefined reference to `optarg'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/eelf32_x86_64.c:5331: undefined reference to `optarg'
+/usr/local/bin/ld: ld_o/eelf32_x86_64.o:/home/lab/binutils-gdb-binutils-2_36_1/ld/eelf32_x86_64.c:5368: more undefined references to `optarg' follow
+/usr/local/bin/ld: ld_o/ldlang.o: in function `lang_vers_match':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/ldlang.c:9005: undefined reference to `fnmatch'
+/usr/local/bin/ld: ld_o/ldlang.o: in function `walk_wild':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/ldlang.c:978: undefined reference to `fnmatch'
+/usr/local/bin/ld: ld_o/ldlang.o: in function `lang_check_section_addresses':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/ldlang.c:5573: undefined reference to `dcngettext'
+/usr/local/bin/ld: ld_o/ldlang.o: in function `name_match':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/ldlang.c:176: undefined reference to `fnmatch'
+/usr/local/bin/ld: ld_o/libctf.a(libctf_la-ctf-link.o): in function `ctf_link_write':
+/home/lab/binutils-gdb-binutils-2_36_1/libctf/ctf-link.c:2106: undefined reference to `tmpfile'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/libctf/ctf-link.c:2121: undefined reference to `fseek'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/libctf/ctf-link.c:2127: undefined reference to `ftell'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/libctf/ctf-link.c:2133: undefined reference to `fseek'
+/usr/local/bin/ld: ld_o/ldmain.o: in function `undefined_symbol':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/./ldmain.c:1459: undefined reference to `perror'
+/usr/local/bin/ld: ld_o/ldmain.o: in function `add_keepsyms_file':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/./ldmain.c:822: undefined reference to `_IO_getc'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/./ldmain.c:826: undefined reference to `_IO_getc'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/./ldmain.c:841: undefined reference to `_IO_getc'
+/usr/local/bin/ld: ld_o/ldmain.o: in function `main':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/./ldmain.c:256: undefined reference to `textdomain'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/./ldmain.c:425: undefined reference to `rewind'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/./ldmain.c:431: undefined reference to `rewind'
+/usr/local/bin/ld: ld_o/ldmain.o: in function `strcpy':
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:90: undefined reference to `stpcpy'
+/usr/local/bin/ld: ld_o/eelf_i386.o: in function `gldelf_i386_handle_option':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/eelf_i386.c:4940: undefined reference to `optarg'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/eelf_i386.c:4957: undefined reference to `optarg'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/eelf_i386.c:4933: undefined reference to `optarg'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/eelf_i386.c:4984: undefined reference to `optarg'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/eelf_i386.c:4953: undefined reference to `optarg'
+/usr/local/bin/ld: ld_o/eelf_i386.o:/home/lab/binutils-gdb-binutils-2_36_1/ld/eelf_i386.c:4990: more undefined references to `optarg' follow
+/usr/local/bin/ld: ld_o/ldcref.o: in function `output_cref':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/ldcref.c:378: undefined reference to `_IO_putc'
+/usr/local/bin/ld: ld_o/ldcref.o: in function `output_one_cref':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/ldcref.c:453: undefined reference to `_IO_putc'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/ldcref.c:467: undefined reference to `_IO_putc'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/ldcref.c:481: undefined reference to `_IO_putc'
+/usr/local/bin/ld: ld_o/ldelf.o: in function `fgets':
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:262: undefined reference to `fgets'
+/usr/local/bin/ld: ld_o/ldelf.o: in function `ldelf_parse_ld_so_conf_include':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/ldelf.c:775: undefined reference to `glob'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/ldelf.c:781: undefined reference to `globfree'
+/usr/local/bin/ld: ld_o/ldelf.o: in function `ldelf_check_ld_elf_hints':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/ldelf.c:714: undefined reference to `fseek'
+/usr/local/bin/ld: ld_o/ldfile.o: in function `ldfile_open_file':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/./ldfile.c:490: undefined reference to `perror'
+/usr/local/bin/ld: ld_o/ldmisc.o: in function `vfinfo':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/ldmisc.c:233: undefined reference to `_IO_putc'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/ldmisc.c:285: undefined reference to `_IO_putc'
+/usr/local/bin/ld: ld_o/lexsup.o: in function `parse_args':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:731: undefined reference to `optind'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:732: undefined reference to `optind'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:737: undefined reference to `opterr'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:739: undefined reference to `getopt_long_only'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:742: undefined reference to `optind'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:743: undefined reference to `getopt_long'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:753: undefined reference to `optarg'
+/usr/local/bin/ld: ld_o/lexsup.o: in function `asprintf':
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:178: undefined reference to `__asprintf_chk'
+/usr/local/bin/ld: ld_o/lexsup.o: in function `parse_args':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:1391: undefined reference to `optarg'
+/usr/local/bin/ld: ld_o/lexsup.o: in function `sprintf':
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:33: undefined reference to `optarg'
+/usr/local/bin/ld: ld_o/lexsup.o: in function `parse_args':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:1569: undefined reference to `optarg'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:817: undefined reference to `optarg'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:856: undefined reference to `optarg'
+/usr/local/bin/ld: ld_o/lexsup.o:/home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:864: more undefined references to `optarg' follow
+/usr/local/bin/ld: ld_o/lexsup.o: in function `parse_args':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:1127: undefined reference to `optind'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:969: undefined reference to `optarg'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:978: undefined reference to `optarg'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:966: undefined reference to `optarg'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:1094: undefined reference to `optarg'
+/usr/local/bin/ld: ld_o/lexsup.o: in function `stat':
+/usr/include/x86_64-linux-gnu/sys/stat.h:451: undefined reference to `optarg'
+/usr/local/bin/ld: ld_o/lexsup.o:/home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:1160: more undefined references to `optarg' follow
+/usr/local/bin/ld: ld_o/lexsup.o: in function `putchar':
+/usr/include/x86_64-linux-gnu/bits/stdio.h:81: undefined reference to `_IO_putc'
+/usr/local/bin/ld: ld_o/lexsup.o: in function `printf':
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:104: undefined reference to `puts'
+/usr/local/bin/ld: ld_o/lexsup.o: in function `parse_args':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:1332: undefined reference to `optarg'
+/usr/local/bin/ld: ld_o/lexsup.o: in function `putchar':
+/usr/include/x86_64-linux-gnu/bits/stdio.h:81: undefined reference to `_IO_putc'
+/usr/local/bin/ld: ld_o/lexsup.o: in function `parse_args':
+/home/lab/binutils-gdb-binutils-2_36_1/ld/lexsup.c:1107: undefined reference to `puts'
+/usr/local/bin/ld: ld_o/lexsup.o: in function `asprintf':
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:178: undefined reference to `__asprintf_chk'
+/usr/local/bin/ld: ld_o/libbfd.a(archive.o): in function `bfd_ar_hdr_from_filesystem':
+/home/lab/binutils-gdb-binutils-2_36_1/bfd/archive.c:1864: undefined reference to `getgid'
+/usr/local/bin/ld: ld_o/libbfd.a(archive.o): in function `_bfd_bsd_write_armap':
+/home/lab/binutils-gdb-binutils-2_36_1/bfd/archive.c:2489: undefined reference to `getgid'
+/usr/local/bin/ld: ld_o/libbfd.a(bfd.o): in function `asprintf':
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:178: undefined reference to `__asprintf_chk'
+/usr/local/bin/ld: ld_o/libbfd.a(bfdio.o): in function `close_on_exec':
+/home/lab/binutils-gdb-binutils-2_36_1/bfd/bfdio.c:80: undefined reference to `fcntl'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/bfd/bfdio.c:82: undefined reference to `fcntl'
+/usr/local/bin/ld: ld_o/libbfd.a(linker.o): in function `strcat':
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:128: undefined reference to `strcat'
+/usr/local/bin/ld: ld_o/libbfd.a(opncls.o): in function `strcpy':
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:90: undefined reference to `stpcpy'
+/usr/local/bin/ld: ld_o/libbfd.a(opncls.o): in function `strcat':
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:128: undefined reference to `strcat'
+/usr/local/bin/ld: /usr/include/x86_64-linux-gnu/bits/string_fortified.h:128: undefined reference to `strcat'
+/usr/local/bin/ld: ld_o/libbfd.a(opncls.o): in function `bfd_fdopenr':
+/home/lab/binutils-gdb-binutils-2_36_1/bfd/opncls.c:372: undefined reference to `fcntl'
+/usr/local/bin/ld: ld_o/libbfd.a(targets.o): in function `find_target':
+/home/lab/binutils-gdb-binutils-2_36_1/bfd/./targets.c:1489: undefined reference to `fnmatch'
+/usr/local/bin/ld: ld_o/libbfd.a(elf.o): in function `bfd_elf_print_symbol':
+/home/lab/binutils-gdb-binutils-2_36_1/bfd/elf.c:2011: undefined reference to `_IO_putc'
+/usr/local/bin/ld: ld_o/libbfd.a(elf.o): in function `print_segment_map':
+/home/lab/binutils-gdb-binutils-2_36_1/bfd/elf.c:5376: undefined reference to `_IO_putc'
+/usr/local/bin/ld: ld_o/libbfd.a(peigen.o): in function `rsrc_cmp':
+/home/lab/binutils-gdb-binutils-2_36_1/bfd/peXXigen.c:3651: undefined reference to `towlower'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/bfd/peXXigen.c:3652: undefined reference to `towlower'
+/usr/local/bin/ld: ld_o/libbfd.a(peigen.o): in function `_bfd_pe_print_private_bfd_data_common':
+/home/lab/binutils-gdb-binutils-2_36_1/bfd/peXXigen.c:2743: undefined reference to `ctime'
+/usr/local/bin/ld: ld_o/libbfd.a(pex64igen.o): in function `rsrc_cmp':
+/home/lab/binutils-gdb-binutils-2_36_1/bfd/peXXigen.c:3651: undefined reference to `towlower'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/bfd/peXXigen.c:3652: undefined reference to `towlower'
+/usr/local/bin/ld: ld_o/libbfd.a(pex64igen.o): in function `_bfd_pex64_print_private_bfd_data_common':
+/home/lab/binutils-gdb-binutils-2_36_1/bfd/peXXigen.c:2743: undefined reference to `ctime'
+/usr/local/bin/ld: ld_o/libbfd.a(plugin.o): in function `vprintf':
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:117: undefined reference to `__vfprintf_chk'
+/usr/local/bin/ld: ld_o/libbfd.a(plugin.o): in function `putchar':
+/usr/include/x86_64-linux-gnu/bits/stdio.h:81: undefined reference to `_IO_putc'
+/usr/local/bin/ld: ld_o/libctf.a(libctf_la-ctf-create.o): in function `ctf_qsort_r':
+/home/lab/binutils-gdb-binutils-2_36_1/libctf/./ctf-decls.h:35: undefined reference to `qsort_r'
+/usr/local/bin/ld: ld_o/libctf.a(libctf_la-ctf-hash.o): in function `ctf_qsort_r':
+/home/lab/binutils-gdb-binutils-2_36_1/libctf/./ctf-decls.h:35: undefined reference to `qsort_r'
+/usr/local/bin/ld: ld_o/libctf.a(libctf_la-ctf-lookup.o): in function `ctf_qsort_r':
+/home/lab/binutils-gdb-binutils-2_36_1/libctf/./ctf-decls.h:35: undefined reference to `qsort_r'
+/usr/local/bin/ld: ld_o/libctf.a(libctf_la-ctf-subr.o): in function `vfprintf':
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:127: undefined reference to `__vfprintf_chk'
+/usr/local/bin/ld: ld_o/libctf.a(libctf_la-ctf-subr.o): in function `vasprintf':
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:210: undefined reference to `__vasprintf_chk'
+/usr/local/bin/ld: ld_o/libctf.a(libctf_la-ctf-open-bfd.o): in function `ctf_fdopen':
+/home/lab/binutils-gdb-binutils-2_36_1/libctf/ctf-open-bfd.c:314: undefined reference to `dup'
+/usr/local/bin/ld: ld_o/libctf.a(libctf_la-ctf-archive.o): in function `ctf_qsort_r':
+/home/lab/binutils-gdb-binutils-2_36_1/libctf/./ctf-decls.h:35: undefined reference to `qsort_r'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/libctf/./ctf-decls.h:35: undefined reference to `qsort_r'
+/usr/local/bin/ld: ld_o/libctf.a(libctf_la-ctf-archive.o): in function `arc_mmap_writeout':
+/home/lab/binutils-gdb-binutils-2_36_1/libctf/ctf-archive.c:1143: undefined reference to `msync'
+/usr/local/bin/ld: ld_o/libctf.a(libctf_la-ctf-decl.o): in function `vasprintf':
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:210: undefined reference to `__vasprintf_chk'
+/usr/local/bin/ld: ld_o/libctf.a(libctf_la-ctf-dedup.o): in function `stpcpy':
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:97: undefined reference to `stpcpy'
+/usr/local/bin/ld: ld_o/libiberty.a(argv.o): in function `expandargv':
+/home/lab/binutils-gdb-binutils-2_36_1/libiberty/./argv.c:431: undefined reference to `fseek'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/libiberty/./argv.c:433: undefined reference to `ftell'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/libiberty/./argv.c:436: undefined reference to `fseek'
+/usr/local/bin/ld: ld_o/libiberty.a(make-relative-prefix.o): in function `strcat':
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:128: undefined reference to `strcat'
+/usr/local/bin/ld: /usr/include/x86_64-linux-gnu/bits/string_fortified.h:128: undefined reference to `strcat'
+/usr/local/bin/ld: /usr/include/x86_64-linux-gnu/bits/string_fortified.h:128: undefined reference to `strcat'
+/usr/local/bin/ld: ld_o/libiberty.a(pex-unix.o): in function `pex_unix_fdopenw':
+/home/lab/binutils-gdb-binutils-2_36_1/libiberty/./pex-unix.c:811: undefined reference to `fcntl'
+/usr/local/bin/ld: ld_o/libiberty.a(pex-unix.o): in function `pex_unix_exec_child':
+/home/lab/binutils-gdb-binutils-2_36_1/libiberty/./pex-unix.c:620: undefined reference to `vfork'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/libiberty/./pex-unix.c:623: undefined reference to `sleep'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/libiberty/./pex-unix.c:588: undefined reference to `pipe2'
+/usr/local/bin/ld: /home/lab/binutils-gdb-binutils-2_36_1/libiberty/./pex-unix.c:687: undefined reference to `execvp'
+/usr/local/bin/ld: ld_o/libiberty.a(pex-unix.o): in function `pex_wait':
+/home/lab/binutils-gdb-binutils-2_36_1/libiberty/./pex-unix.c:136: undefined reference to `wait4'
+/usr/local/bin/ld: ld_o/libiberty.a(pex-unix.o): in function `pex_unix_pipe':
+/home/lab/binutils-gdb-binutils-2_36_1/libiberty/./pex-unix.c:795: undefined reference to `pipe'
+/usr/local/bin/ld: ld_o/libiberty.a(pex-common.o): in function `temp_file':
+/home/lab/binutils-gdb-binutils-2_36_1/libiberty/./pex-common.c:122: undefined reference to `mkstemps'
+/usr/local/bin/ld: ld_o/libiberty.a(make-temp-file.o): in function `make_temp_file_with_prefix':
+/home/lab/binutils-gdb-binutils-2_36_1/libiberty/./make-temp-file.c:210: undefined reference to `mkstemps'
+/usr/local/bin/ld: ld_o/plugin.o: in function `putchar':
+/usr/include/x86_64-linux-gnu/bits/stdio.h:81: undefined reference to `_IO_putc'

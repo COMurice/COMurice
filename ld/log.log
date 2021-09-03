@@ -1,0 +1,51 @@
+log getenv
+******
+getenv LLVM_OVERRIDE_PRODUCER = (null)
+log getenv
+******
+getenv AS_SECURE_LOG_FILE = (null)
+log sigaltstack
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log lseek
+lseek fd:2 return -1
+errno = 29
+log isatty
+isatty fd:2 return:1log setupterm
+log tigetnum
+0
+log set_curterm
+log del_curterm
+log getenv
+******
+getenv LLD_REPRODUCE = (null)

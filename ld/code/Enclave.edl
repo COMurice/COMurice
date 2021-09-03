@@ -1,0 +1,146 @@
+enclave {
+
+    trusted {
+        /* define ECALLs here. */
+    };
+
+    untrusted {
+		void fstatfs_ocall([in, out]int *preturn, int fd,[in,out,size=1] void *buf);
+		void rename_ocall([in, out]int *preturn, [in, string]char *oldname, [in, string]char *newname);
+		void posix_fallocate_ocall([in, out]int *preturn, int fd, int offset, int len);
+		void ftruncate_ocall([in, out]int *preturn, int fd, int length);
+		void __xstat_ocall([in, out]int *preturn, int __ver, [int, string]const char *__filename, [in,size=1]void *__stat_buf);
+		void realpath_ocall([in, out]int *preturn, [in, string]const char *path, [in, out, string]char *resolved_path);
+		void getcwd_ocall([in, out]int *preturn, [in, out, string]char *buf, size_t size);
+		void lstat_ocall([in, out]int *preturn, [in, string]const char *path, [in,out,size=1]void *buf);
+		void stat_ocall([in,out] int *preturn,[in,string] const char *path,[in,size=1] void *buf);
+		void umask_ocall([in,out] int *preturn,mode_t mask);
+		void chmod_ocall([in,out] int *preturn,[in,string] const char * path,mode_t mode);
+		void fchmod_ocall([in,out] int *preturn,int fildes, mode_t mode);
+		void futimens_ocall([in,out]int *preturn,int fd,[in,size=1] void *times);
+		void closedir_ocall([in,out] int *preturn,[in,size=1] void *dir);
+		void readdir_ocall([in,size=1] void *dir,[in,out,size=1] void* readdir_tmp);
+		void opendir_ocall([in,size=1] const char *name,[in,out,size=1] void *opendir_tmp);
+		void pread_ocall([in,out] int *preturn,int fd,[in,size=1] void *buf, size_t count, off_t offset);
+		void getuid_ocall([in,out] int *preturn);
+		void getpwuid_ocall(uid_t uid,[in,out size=1] void* getpwuid_tmp); // this format has some erros.
+		void getpwnam_ocall([in,string] const char *name,[in,out,size=1] void *getpwnam_tmp);
+		void mallinfo_ocall([in,size=1] void *mallinfo_tmp);
+		void getrusage_ocall([in,out] int *preturn,int who,[in,size=1] void *usage);
+		void dup2_ocall([in,out] int *preturn,int odlfd, int newfd);
+		void sigfillset_ocall([in,out] int *preturn,[in] sigset_t * set);
+		// not sure posix_fallocate_ocall 
+		void waitpid_ocall([in,out] int *preturn,pid_t pid,[in] int *status, int options);
+		void alarm_ocall([in,out] int *preturn,unsigned int seconds);
+		void strsignal_ocall(int sig,[in,out,string] char *strsignal_tmp);
+		void kill_ocall([in,out] int *preturn,pid_t pid, int sig);
+		void wait_ocall ([in,out] int *preturn,[in] int * status);
+		void sysconf_ocall([in,out] int *preturn,int name);
+		void fork_ocall([in,out] int *preturn);
+		// not sure execve_ocall
+		// not sure execv_ocalll
+		void sigaltstack_ocall([in,out] int *preturn,[in,size=1]const void *ss, [in,size=1] void *old_ss);
+		void unlink_ocall([in,out] int *preturn ,[in,string] const char * pathname);
+		void backtrace_ocall([in,out] int *preturn,[in,size=10] void **buffer, int size); // not sure
+		void sched_getaffinity_ocall([in,out] int *preturn ,pid_t pid, unsigned int cpusetsize,[in] cpu_set_t *mask);
+		void __sched_cpucount_ocall([in,out] int *preturn ,size_t setsize, [in] const cpu_set_t *setp);
+		void pthread_setschedparam_ocall([in,out] int *preturn , pthread_t target_thread, int policy, [in] const struct sched_param *param); // test 
+		void pthread_attr_init_ocall([in,out] int *preturn,[in] pthread_attr_t *attr);
+		void pthread_attr_destroy_ocall([in,out] int *preturn,[in,out] pthread_attr_t *attr);
+		void __printf_chk_ocall([in,out] int *preturn,int flag, [in,string] const char * format);
+		void localtime_ocall([in] const time_t *timer,[in,size=1] void tm* localtime_tmp);
+		void gettimeofday_ocall([in,out] int *preturn,[in,out] void * tv, [in,out] * tz);
+		void aligned_alloc_ocall([in,out,size=10]void *preturn,size_t alignment, size_t size);
+		void fwrite_ocall([in,out] int *preturn,[in,out,size=10]const void *ptr, size_t size, size_t nmemb,[in] void *stream);
+		void fputs_ocall([in,out] int *preturn,[in,string] const char *str, [in,size=10] void *stream);
+		void fputc_ocall([in,out] int *preturn,int c, [in,out] void * stream);
+		void write_ocall ([in,out] int *preturn ,int fd, [in,size=10] const void * buf, size_t count);
+		void _strtof_l_ocall([in,out] float *preturn,[in,string] const char *strSource,[in] char **endptr,_locale_t locale);
+		void _strtod_l_ocall([in,out] double *preturn,[in,string] const char *strSource,[in] char **endptr, _locale_t locale);
+		void _strtold_l_ocall([in,out] long double *preturn,[in,string] const char *strSource,[in] char **endptr,_locale_t locale);
+		void __newlocale_ocall ([in,out] int *preturn,int category_mask, [in,string] const char *locale, locale_t base);
+		void strdup_ocall([in,string] const char *s,[in,out,string] char * strdup_tmp);
+		void bind_textdomain_codeset_ocall ([in,string] const char * domainname, [in,string] const char * codeset,[in,out,string] char *bind_textdomain_codeset_tmp);
+		// dgettext
+		void getenv_ocall([in,string] const char* name,[in,out,string] char *getenv_tmp);
+		void _strcoll_l_ocall([in,out] int *preturn,[in,string] const char *string1,[in,string] const char *string2,_locale_t locale);
+		void _strxfrm_l_ocall([in,out] int *preturn,[in,string] char *strDest,[in,string] const char *strSource,size_t count,_locale_t locale);
+		void __wcscoll_l_ocall([in,out] int *preturn,[in,string] const wchar_t *string1,[in,string] const wchar_t *string2,_locale_t locale);
+		void __wcsxfrm_l_ocall([in,out] int *preturn,[in,string] wchar_t *strDest,[in,string] const wchar_t *strSource, size_t count,_locale_t locale);
+		void __ctype_get_mb_cur_max_ocall([in,out] int *preturn);
+		void __errno_location_ocall([in,out,count=100]int *__errno_location_tmp);
+		void fflush_ocall([in,out] int *preturn,[in,size = 1]void *stream);
+		void fdopen_ocall(int fildes,[in,string] const char * mode,[in,out,size = 1] void *fdopen_tmp);
+		void setvbuf_ocall([in,out] int *preturn,[in,size = 1] void *stream,[in,string] char *buffer, int mode, size_t size);
+		void fopen64_ocall([in,string] char *Path,[in,string] char *Type,[in,out,size = 1] void *fopen64_tmp);
+		void fileno_ocall([in,out] int *preturn,[in,size = 1] void * stream);
+		void fclose_ocall([in,out] int *preturn,[in,size =1] void *fp );
+		void read_ocall([in,out] int *preturn,int fd, [in,size = 1] void * buf, size_t count);
+		void writev_ocall([in,out] int *preturn,int filedes,[in,out,size = 1] void *iov, int iovcnt);
+		void lseek64_ocall([in,out] int *preturn,int fd, off64_t offset, int whence);
+		void poll_ocall([in,out] int *preturn,[in,size = 1] void *fd, int nfds, int timeout);
+		void __fxstat64_ocall([in,out] int *preturn,int ver, int fildes, [in,size = 1] void * stat_buf);
+		void setlocale_ocall(int category, [in,string] const char *locale,[in,out,string]char *setlocale_tmp);
+		void __strftime_l_ocall([in,out] int *preturn,[in,string] char *strDest,size_t maxsize,[in,string] const char *format,[in,out,size=1]const void *timeptr,_locale_t locale);
+		void __wcsftime_l_ocall([in,out] int *preturn,[in,string] wchar_t *strDest,size_t maxsize,[in,string] const wchar_t *format,[in,size = 1] const void *timeptr,_locale_t locale);
+		void __towupper_l_ocall([in,out] int *preturn, wint_t c ,_locale_t locale);
+		void __towlower_l_ocall([in,out] int *preturn, wint_t c,_locale_t locale);
+		void __iswctype_l_ocall([in,out] int *preturn,wint_t c,wctype_t desc,_locale_t locale);
+		void bindtextdomain_ocall ([in,string] const char * domainname,[in,string] const char * dirname,[in,out,string] char *bindtextdomain_tmp);
+		void get_nprocs_ocall([in,out] int *preturn);
+		void nanosleep_ocall([in,out] int *preturn,[in,size = 1] const void *req,[in,size = 1] void *rem);
+		void pthread_detach_ocall([in,out] int *preturn,[in,out] pthread_t tid);
+		void clock_gettime_ocall([in,out]  int *preturn,clockid_t clk_id,[in,size = 1] void *tp);
+		void fopen_ocall([in,string ] const char *filename, [in,string] const char *mode,[in,size = 1] *fopen_tmp);
+		void __fprintf_chk_ocall([in,out] int *preturn,[in,size = 1] void * stream, int flag, [in,string] const char * format);
+		void getc_ocall([in,out] int *preturn,[in,size = 1] void *stream);
+		void ungetc_ocall([in,out] int *preturn,int chr, [in,size = 1 ] void *stream);
+		void putc_ocall([in,out] int *preturn,int chr, [in,size = 1] void *stream);
+		void fseeko64_ocall([in,out] int *preturn,[in,size = 1] void *stream, off64_t offset, int fromwhere);
+		void ftello64_ocall([in,out] int *preturn,[in,size = 1] void *stream);
+		void getwc_ocall([in,out] int *preturn,[in,size = 1] void* stream);
+		void ungetwc_ocall([in,out] int *preturn,wint_t ch, [in,size = 1] void * stream);
+		void ungetwc_ocall([in,out] int *preturn,wint_t ch,[in,size = 1] void * stream);
+		void fread_ocall([in,out] int *preturn,[in,size = 1]void *buffer, size_t size, size_t count, [in,size = 1] void *stream );
+		void getrlimit_ocall([in,out] int *preturn,int resource, [in,size = 1] void *rlim);
+		void setrlimit_ocall([in,out] int *preturn,int resource, [in,size = 1] const void *rlim);
+		void strcpy_ocall([in,string]] char *dest, [in,string] const char *src,[in,out,string] char *strcpy_tmp);
+		void time_ocall([in,out] int *preturn,[in] time_t *seconds);
+		void localtime_r_ocall( [in] const time_t *timer, [in,size = 1] void *buf ,[in,out,size = 1] void *localtime_r_tmp);
+		void getpid_ocall([in,out] int *preturn);
+		void sigemptyset_ocall([in,out] int *preturn,[in] sigset_t *set);
+		void sigaddset_ocall([in,out] int *preturn,[in] sigset_t *set, int signum);
+		void sigprocmask_ocall([in,out] int *preturn,ubt how,[in] const sigset_t*set,[in] sigset_t *oldset);
+		void raise_ocall([in,out] int *preturn,int sig);
+		// not sure _setjmp_ocall 
+		void gethostname_ocall([in,out] int *preturn,[in,string] char *name, size_t len);
+		void getsid_ocall([in,out] int *preturn,pid_t pid);
+		void open_ocall([in,out] int *preturn,[in,string] const char * pathname, int flags);
+		void close_ocall([in,out] int *preturn,int fildes);
+		void isatty_ocall([in,out] int *preturn,int fd);
+		void lseek_ocall([in,out] int *preturn,int fd, off_t offset, int whence);
+		void dlclose_ocall([in,out] int *preturn,[in,size = 1] void *handle);
+		void uname_ocall([in,out] int *preturn,[in,size = 1] void *buf);
+		void munmap_ocall([in,out] int *preturn,[in,size = 1] void *start, size_t length);
+		void mprotect_ocall([in,out] int *preturn,[in,size = 1] void *addr, size_t len, int prot);
+		// not sure mmap;
+		// not sure readlink;
+		void __realpath_chk_ocall([in,string] const char *buf,[in,string] char *resolved, size_t resolvedlen,[in,out,string] char *__realpath_chk_tmp);
+		void access_ocall([in,out] int *preturn,[in,string] const char *path, int amode);
+		void chdir_ocall([in,out] int *preturn,[in,string] const char * path);
+		void mkdir_ocall([in,out] int *preturn,[in,string] const char *path, mode_t mode);
+		void symlink([in,out] int *preturn,[in,string] const char *path1, [in,string] const char *path2);
+		void link_ocall ([in,out] int *preturn,[in,string] const char * oldpath, [in,string] const char * newpath);
+		void __lxstat_ocall ([in,out] int *preturn,int vers,[in,string]  const char *name, [in,size = 1]void *buf);
+		int sgx_thread_set_untrusted_event_ocall([in,out,size = 1]const void *waiter)
+
+
+		
+
+		
+		
+		
+    };
+}; 
+
+

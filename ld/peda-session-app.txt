@@ -1,0 +1,3 @@
+break sgx_ecall
+break getenv
+
