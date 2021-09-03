@@ -1,0 +1,3 @@
+libLocalAttestation_Trusted.a(EnclaveMessageExchange.o): in function `std::__1::allocator<std::__1::__tree_node<std::__1::__value_type<unsigned long, _la_dh_session_t>, void*> >::allocate(unsigned long, void const*)':
+/opt/intel/sgxsdk/include/libcxx/memory:1740: undefined reference to `std::bad_alloc::bad_alloc()'
+_ZNSt9bad_allocC1Ev

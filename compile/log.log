@@ -1,0 +1,1086 @@
+all_argv = /home/lab/memory-resident/recevier/app
+all_env= 
+log getenv
+getenv bar = (null)
+log getenv
+getenv LLVM_VERIFY_MACHINEINSTRS = (null)
+log gettimeofday
+gettimeofday return 0
+log gettimeofday
+gettimeofday return 0
+cnt_argv=100000
+cnt_env 100000 
+*******************
+*******************
+argv_used[0] /home/lab/memory-resident/recevier/app
+argv_used[1] -cc1
+argv_used[2] -triple
+argv_used[3] x86_64-unknown-linux-gnu
+argv_used[4] -emit-obj
+argv_used[5] -mrelax-all
+argv_used[6] -disable-free
+argv_used[7] -disable-llvm-verifier
+argv_used[8] -main-file-name
+argv_used[9] test.c
+argv_used[10] -mrelocation-model
+argv_used[11] static
+argv_used[12] -mdisable-fp-elim
+argv_used[13] -fmath-errno
+argv_used[14] -masm-verbose
+argv_used[15] -mconstructor-aliases
+argv_used[16] -munwind-tables
+argv_used[17] -fuse-init-array
+argv_used[18] -target-cpu
+argv_used[19] x86-64
+argv_used[20] -resource-dir
+argv_used[21] /home/lab/memory-resident/recevier/../lib/clang/3.4
+argv_used[22] -internal-isystem
+argv_used[23] /usr/local/include
+argv_used[24] -internal-isystem
+argv_used[25] /home/lab/memory-resident/recevier/../lib/clang/3.4/include
+argv_used[26] -internal-externc-isystem
+argv_used[27] /usr/include/x86_64-linux-gnu
+argv_used[28] -internal-externc-isystem
+argv_used[29] /include
+argv_used[30] -internal-externc-isystem
+argv_used[31] /usr/include
+argv_used[32] -fdebug-compilation-dir
+argv_used[33] /home/lab/memory-resident/recevier
+argv_used[34] -ferror-limit
+argv_used[35] 19
+argv_used[36] -fmessage-length
+argv_used[37] 0
+argv_used[38] -mstackrealign
+argv_used[39] -fobjc-runtime=gcc
+argv_used[40] -fdiagnostics-show-option
+argv_used[41] -fcolor-diagnostics
+argv_used[42] -vectorize-slp
+argv_used[43] -o
+argv_used[44] /tmp/test-8ebbb7.o
+argv_used[45] -x
+argv_used[46] c
+argv_used[47] test.c
+env_used[0] 
+****************************
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log sigemptyset
+log sigaction
+log lseek
+lseek fd:2 return -1
+log stat
+stat arg /usr/local/include return 0
+log stat
+stat arg /home/lab/memory-resident/recevier/../lib/clang/3.4/include return -1
+log stat
+stat arg /home/lab/memory-resident/recevier/../lib/clang/3.4 return -1
+log stat
+stat arg /usr/include/x86_64-linux-gnu return 0
+log stat
+stat arg /include return -1
+log stat
+stat arg / return 0
+log stat
+stat arg /include return -1
+log stat
+stat arg /usr/include return 0
+log open
+open /System/Library/CoreServices/SystemVersion.plist return -1
+log stat
+stat arg /tmp/test-8ebbb7.o return -1
+log fopen
+fopen /dev/urandom
+log fread
+fread return 4
+log fclose
+fclose return 0
+log gettimeofday
+gettimeofday return 0
+log getpid
+log srand
+log rand
+log rand
+log rand
+log rand
+log rand
+log rand
+log rand
+log rand
+log open
+open /tmp/test-8ebbb7.o-fdbaf2ab return 7
+log lseek
+lseek fd:7 return 0
+log stat
+stat arg . return 0
+log open
+open test.c return 8
+log fstat
+fstat fd:8 return 0
+pread********************************
+pread********************************
+pread********************************
+pread********************************
+pread********************************
+pread********************************
+pread fd:8  count:44   offset:0  return 44
+log close
+close fd:8 return 0
+log write
+write return 4
+log write
+write return 6
+log write
+write return 1
+log write
+write return 1
+log write
+write return 1
+log write
+write return 1
+log write
+write return 1
+log write
+write return 1
+log write
+write return 4
+log write
+write return 9
+log write
+write return 5
+log write
+write return 2
+log write
+write return 4
+log write
+write return 4
+log write
+write return 64
+log write
+write return 4
+log write
+write return 1
+log write
+write return 28
+log write
+write return 1
+log write
+write return 9
+log write
+write return 5
+log write
+write return 1
+log write
+write return 4
+log close
+close fd:7 return 0
+log stat
+stat arg /tmp/test-8ebbb7.o-fdbaf2ab return 0
+log remove
+log write
+write return 1
+log write
+write return 6
+log write
+write return 12
+end of compile
+all_argv = 
+all_env= 
+cnt_argv=100000
+cnt_env 100000 
+*******************
+*******************
+argv_used[0] 
+env_used[0] 
+****************************
+log getenv
+getenv QA_OVERRIDE_GCC3_OPTIONS = (null)
+log access
+access /proc/self/exe return 0
+log readlink
+readlink /proc/self/exe return 37 buf_content:/home/lab/memory-resident/compile/app
+log getenv
+getenv PWD = /home/lab/memory-resident/compile
+log stat
+stat arg /home/lab/memory-resident/compile return 0
+log stat
+stat arg . return 0
+log getcwd
+getcwd /home/lab/memory-resident/compile
+log access
+access /home/lab/memory-resident/compile return 0
+log getenv
+getenv CC_PRINT_OPTIONS = (null)
+log getenv
+getenv CC_PRINT_HEADERS = (null)
+log getenv
+getenv CC_LOG_DIAGNOSTICS = (null)
+log getenv
+getenv COMPILER_PATH = (null)
+log access
+access /home/lab/memory-resident/compile/.. return 0
+log access
+access /home/lab/memory-resident/compile/../lib64 return -1
+log access
+access /home/lab/memory-resident/compile/../lib return -1
+log access
+access /home/lab/memory-resident/compile/../lib32 return -1
+log access
+access /home/lab/memory-resident/compile/../lib return -1
+log access
+access /usr return 0
+log access
+access /usr/lib64 return -1
+log access
+access /usr/lib return 0
+log opendir
+opendir /usr/lib/gcc/x86_64-linux-gnu return 0 pointer 0x55ae54ed3fd0
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0/64/crtbegin.o return -1
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0/crtbegin.o return 0
+log closedir
+close dir return 0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-linux-gnu return 0 pointer 0x55ae54ed3fd0
+log closedir
+close dir return 0
+log opendir
+opendir /usr/lib/gcc/x86_64-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-unknown-linux-gnu/gcc/x86_64-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/x86_64-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-pc-linux-gnu/gcc/x86_64-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/x86_64-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-redhat-linux6E/gcc/x86_64-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/x86_64-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-redhat-linux/gcc/x86_64-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/x86_64-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-suse-linux/gcc/x86_64-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/x86_64-manbo-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-manbo-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-manbo-linux-gnu/gcc/x86_64-manbo-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-manbo-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/x86_64-linux-gnu return 0 pointer 0x55ae54ed3fd0
+log closedir
+close dir return 0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-linux-gnu return 0 pointer 0x55ae54ed3fd0
+log closedir
+close dir return 0
+log opendir
+opendir /usr/lib/gcc/x86_64-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-slackware-linux/gcc/x86_64-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/x86_64-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-unknown-linux-gnu/gcc/x86_64-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-unknown-linux-gnu return 1 pointer 0x0
+log access
+access /usr/lib32 return 0
+log opendir
+opendir /usr/lib32/gcc/i686-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i686-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i686-linux-gnu/gcc/i686-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i686-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i686-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i686-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i686-pc-linux-gnu/gcc/i686-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i686-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i486-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i486-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i486-linux-gnu/gcc/i486-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i486-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i386-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i386-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i386-linux-gnu/gcc/i386-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i386-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i386-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i386-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i386-redhat-linux6E/gcc/i386-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i386-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i686-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i686-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i686-redhat-linux/gcc/i686-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i686-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i586-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i586-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i586-redhat-linux/gcc/i586-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i586-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i386-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i386-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i386-redhat-linux/gcc/i386-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i386-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i586-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i586-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i586-suse-linux/gcc/i586-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i586-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i486-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i486-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i486-slackware-linux/gcc/i486-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i486-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i686-montavista-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i686-montavista-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i686-montavista-linux/gcc/i686-montavista-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i686-montavista-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i386-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i386-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i386-unknown-linux-gnu/gcc/i386-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i386-unknown-linux-gnu return 1 pointer 0x0
+log access
+access /usr/lib return 0
+log opendir
+opendir /usr/lib/gcc/i686-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i686-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i686-linux-gnu/gcc/i686-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i686-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i686-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i686-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i686-pc-linux-gnu/gcc/i686-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i686-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i486-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i486-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i486-linux-gnu/gcc/i486-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i486-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i386-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i386-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i386-linux-gnu/gcc/i386-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i386-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i386-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i386-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i386-redhat-linux6E/gcc/i386-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i386-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i686-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i686-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i686-redhat-linux/gcc/i686-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i686-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i586-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i586-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i586-redhat-linux/gcc/i586-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i586-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i386-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i386-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i386-redhat-linux/gcc/i386-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i386-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i586-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i586-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i586-suse-linux/gcc/i586-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i586-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i486-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i486-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i486-slackware-linux/gcc/i486-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i486-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i686-montavista-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i686-montavista-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i686-montavista-linux/gcc/i686-montavista-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i686-montavista-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i386-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i386-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i386-unknown-linux-gnu/gcc/i386-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i386-unknown-linux-gnu return 1 pointer 0x0
+log access
+access /home/lab/memory-resident/compile/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /home/lab/memory-resident/compile/ld return -1
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../x86_64-linux-gnu/bin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../x86_64-linux-gnu/bin/ld return -1
+log getenv
+getenv PATH = /home/lab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/lab/下载/project/llvm-project-llvmorg-10.0.1/build/bin:/home/lab/.local/bin
+log access
+access /home/lab/.local/bin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /usr/local/sbin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /usr/local/bin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /usr/sbin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /usr/bin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /sbin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /bin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /usr/games/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /usr/local/games/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /snap/bin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /home/lab/下载/project/llvm-project-llvmorg-10.0.1/build/bin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /home/lab/.local/bin/x86_64-unknown-linux-gnu-ld return -1
+log getenv
+getenv PATH = /home/lab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/lab/下载/project/llvm-project-llvmorg-10.0.1/build/bin:/home/lab/.local/bin
+log access
+access /home/lab/.local/bin/ld return -1
+log access
+access /usr/local/sbin/ld return -1
+log access
+access /usr/local/bin/ld return 0
+log stat
+stat arg /usr/local/bin/ld return 0
+log open
+open /etc/lsb-release return 7
+log fstat
+fstat fd:7 return 0
+pread********************************
+pread********************************
+pread********************************
+pread********************************
+pread********************************
+pread********************************
+pread fd:7  count:105   offset:0  return 105
+log close
+close fd:7 return 0
+log access
+access /lib/x86_64-linux-gnu return 0
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0 return 0
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../x86_64-linux-gnu/lib/../lib64 return -1
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../x86_64-linux-gnu return 0
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../lib64 return -1
+log access
+access /lib/x86_64-linux-gnu return 0
+log access
+access /lib/../lib64 return 0
+log access
+access /usr/lib/x86_64-linux-gnu return 0
+log access
+access /usr/lib/../lib64 return -1
+log access
+access /usr/lib/x86_64-linux-gnu/../../lib64 return -1
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../x86_64-linux-gnu/lib return -1
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../.. return 0
+log access
+access /lib return 0
+log access
+access /usr/lib return 0
+log write
+write return 3
+log write
+write return 2
+log write
+write return 5
+log write
+write return 2
+log write
+write return 14
+log write
+write return 1
+log getenv
+getenv FORCE_CLANG_DIAGNOSTICS_CRASH = (null)
+end of compile
+all_argv = 
+all_env= 
+cnt_argv=100000
+cnt_env 100000 
+*******************
+*******************
+argv_used[0] 
+env_used[0] 
+****************************
+log getenv
+getenv QA_OVERRIDE_GCC3_OPTIONS = (null)
+log access
+access /proc/self/exe return 0
+log readlink
+readlink /proc/self/exe return 37 buf_content:/home/lab/memory-resident/compile/app
+log getenv
+getenv PWD = /home/lab/memory-resident/compile
+log stat
+stat arg /home/lab/memory-resident/compile return 0
+log stat
+stat arg . return 0
+log getcwd
+getcwd /home/lab/memory-resident/compile
+log access
+access /home/lab/memory-resident/compile return 0
+log getenv
+getenv CC_PRINT_OPTIONS = (null)
+log getenv
+getenv CC_PRINT_HEADERS = (null)
+log getenv
+getenv CC_LOG_DIAGNOSTICS = (null)
+log getenv
+getenv COMPILER_PATH = (null)
+log access
+access /home/lab/memory-resident/compile/.. return 0
+log access
+access /home/lab/memory-resident/compile/../lib64 return -1
+log access
+access /home/lab/memory-resident/compile/../lib return -1
+log access
+access /home/lab/memory-resident/compile/../lib32 return -1
+log access
+access /home/lab/memory-resident/compile/../lib return -1
+log access
+access /usr return 0
+log access
+access /usr/lib64 return -1
+log access
+access /usr/lib return 0
+log opendir
+opendir /usr/lib/gcc/x86_64-linux-gnu return 0 pointer 0x55ae54ed3fd0
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0/64/crtbegin.o return -1
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0/crtbegin.o return 0
+log closedir
+close dir return 0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-linux-gnu return 0 pointer 0x55ae54ed3fd0
+log closedir
+close dir return 0
+log opendir
+opendir /usr/lib/gcc/x86_64-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-unknown-linux-gnu/gcc/x86_64-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/x86_64-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-pc-linux-gnu/gcc/x86_64-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/x86_64-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-redhat-linux6E/gcc/x86_64-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/x86_64-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-redhat-linux/gcc/x86_64-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/x86_64-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-suse-linux/gcc/x86_64-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/x86_64-manbo-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-manbo-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-manbo-linux-gnu/gcc/x86_64-manbo-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-manbo-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/x86_64-linux-gnu return 0 pointer 0x55ae54ed3fd0
+log closedir
+close dir return 0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-linux-gnu return 0 pointer 0x55ae54ed3fd0
+log closedir
+close dir return 0
+log opendir
+opendir /usr/lib/gcc/x86_64-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-slackware-linux/gcc/x86_64-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/x86_64-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/x86_64-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-unknown-linux-gnu/gcc/x86_64-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/x86_64-unknown-linux-gnu return 1 pointer 0x0
+log access
+access /usr/lib32 return 0
+log opendir
+opendir /usr/lib32/gcc/i686-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i686-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i686-linux-gnu/gcc/i686-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i686-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i686-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i686-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i686-pc-linux-gnu/gcc/i686-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i686-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i486-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i486-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i486-linux-gnu/gcc/i486-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i486-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i386-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i386-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i386-linux-gnu/gcc/i386-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i386-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i386-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i386-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i386-redhat-linux6E/gcc/i386-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i386-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i686-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i686-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i686-redhat-linux/gcc/i686-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i686-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i586-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i586-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i586-redhat-linux/gcc/i586-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i586-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i386-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i386-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i386-redhat-linux/gcc/i386-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i386-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i586-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i586-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i586-suse-linux/gcc/i586-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i586-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i486-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i486-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i486-slackware-linux/gcc/i486-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i486-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i686-montavista-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i686-montavista-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i686-montavista-linux/gcc/i686-montavista-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i686-montavista-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc/i386-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/gcc-cross/i386-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i386-unknown-linux-gnu/gcc/i386-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib32/i386-unknown-linux-gnu return 1 pointer 0x0
+log access
+access /usr/lib return 0
+log opendir
+opendir /usr/lib/gcc/i686-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i686-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i686-linux-gnu/gcc/i686-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i686-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i686-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i686-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i686-pc-linux-gnu/gcc/i686-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i686-pc-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i486-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i486-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i486-linux-gnu/gcc/i486-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i486-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i386-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i386-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i386-linux-gnu/gcc/i386-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i386-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i386-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i386-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i386-redhat-linux6E/gcc/i386-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i386-redhat-linux6E return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i686-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i686-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i686-redhat-linux/gcc/i686-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i686-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i586-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i586-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i586-redhat-linux/gcc/i586-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i586-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i386-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i386-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i386-redhat-linux/gcc/i386-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i386-redhat-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i586-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i586-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i586-suse-linux/gcc/i586-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i586-suse-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i486-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i486-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i486-slackware-linux/gcc/i486-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i486-slackware-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i686-montavista-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i686-montavista-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i686-montavista-linux/gcc/i686-montavista-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i686-montavista-linux return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc/i386-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/gcc-cross/i386-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i386-unknown-linux-gnu/gcc/i386-unknown-linux-gnu return 1 pointer 0x0
+log opendir
+opendir /usr/lib/i386-unknown-linux-gnu return 1 pointer 0x0
+log access
+access /home/lab/memory-resident/compile/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /home/lab/memory-resident/compile/ld return -1
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../x86_64-linux-gnu/bin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../x86_64-linux-gnu/bin/ld return -1
+log getenv
+getenv PATH = /home/lab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/lab/下载/project/llvm-project-llvmorg-10.0.1/build/bin:/home/lab/.local/bin
+log access
+access /home/lab/.local/bin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /usr/local/sbin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /usr/local/bin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /usr/sbin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /usr/bin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /sbin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /bin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /usr/games/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /usr/local/games/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /snap/bin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /home/lab/下载/project/llvm-project-llvmorg-10.0.1/build/bin/x86_64-unknown-linux-gnu-ld return -1
+log access
+access /home/lab/.local/bin/x86_64-unknown-linux-gnu-ld return -1
+log getenv
+getenv PATH = /home/lab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/lab/下载/project/llvm-project-llvmorg-10.0.1/build/bin:/home/lab/.local/bin
+log access
+access /home/lab/.local/bin/ld return -1
+log access
+access /usr/local/sbin/ld return -1
+log access
+access /usr/local/bin/ld return 0
+log stat
+stat arg /usr/local/bin/ld return 0
+log open
+open /etc/lsb-release return 7
+log fstat
+fstat fd:7 return 0
+pread********************************
+pread********************************
+pread********************************
+pread********************************
+pread********************************
+pread********************************
+pread fd:7  count:105   offset:0  return 105
+log close
+close fd:7 return 0
+log access
+access /lib/x86_64-linux-gnu return 0
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0 return 0
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../x86_64-linux-gnu/lib/../lib64 return -1
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../x86_64-linux-gnu return 0
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../lib64 return -1
+log access
+access /lib/x86_64-linux-gnu return 0
+log access
+access /lib/../lib64 return 0
+log access
+access /usr/lib/x86_64-linux-gnu return 0
+log access
+access /usr/lib/../lib64 return -1
+log access
+access /usr/lib/x86_64-linux-gnu/../../lib64 return -1
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../../../x86_64-linux-gnu/lib return -1
+log access
+access /usr/lib/gcc/x86_64-linux-gnu/7.5.0/../../.. return 0
+log access
+access /lib return 0
+log access
+access /usr/lib return 0
+log write
+write return 3
+log write
+write return 2
+log write
+write return 5
+log write
+write return 2
+log write
+write return 14
+log write
+write return 1
+log getenv
+getenv FORCE_CLANG_DIAGNOSTICS_CRASH = (null)

@@ -1,0 +1,5 @@
+-lz
+-lrt
+-ldl
+-ltinfo
+-lpthread
